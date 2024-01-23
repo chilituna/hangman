@@ -36,7 +36,7 @@ while '_' in display and lives > 0:
         correct_answer = True
       i += 1
     if correct_answer == False:
-      print(guess.upper() + " is not in the word. You lose a life. ")
+      print(guess.upper() + " is not in the word.")
       lives -= 1
   else:
     print("You already gave that word. Try again")
