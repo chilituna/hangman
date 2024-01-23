@@ -23,7 +23,7 @@ print (logo)
 #draw the stage and guessed word
 while '_' in display and lives > 0:
   print(stages[lives])
-  print(f"{' '.join(display).upper())}\n")
+  print(f"{' '.join(display).upper()}\n")
   correct_answer = False
   #ask for letter - if included, replace in the displayed word - if not, reduce life - if already guessed, inform user
   guess = input("Guess a letter: ").lower()
@@ -43,10 +43,10 @@ while '_' in display and lives > 0:
 #if the displayed word is complete, user wins, otherwise, they lose.
 if '_' not in display:
   print(stages[lives])
-  print(f"{' '.join(display)}\n")
+  print(f"{' '.join(display).upper()}\n")
   print("You win!")
 else:
   print(stages[lives])
-  print(f"{' '.join(display)}\n")
+   print(f"{' '.join(display).upper()}\n")
   print("You lose! The correct word would have been " + chosen_word)
 exit()
