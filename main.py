@@ -23,7 +23,7 @@ print (logo)
 #draw the stage and guessed word
 while '_' in display and lives > 0:
   print(stages[lives])
-  print(f"{' '.join(display)}\n")
+  print(f"{' '.join(display).upper())}\n")
   correct_answer = False
   #ask for letter - if included, replace in the displayed word - if not, reduce life - if already guessed, inform user
   guess = input("Guess a letter: ").lower()
