@@ -47,6 +47,6 @@ if '_' not in display:
   print("You win!")
 else:
   print(stages[lives])
-   print(f"{' '.join(display).upper()}\n")
+  print(f"{' '.join(display).upper()}\n")
   print("You lose! The correct word would have been " + chosen_word)
 exit()
