@@ -39,7 +39,7 @@ while '_' in display and lives > 0:
       print(guess.upper() + " is not in the word.")
       lives -= 1
   else:
-    print("You already gave that word. Try again")
+    print("You already gave that letter. Try again")
 #if the displayed word is complete, user wins, otherwise, they lose.
 if '_' not in display:
   print(stages[lives])
